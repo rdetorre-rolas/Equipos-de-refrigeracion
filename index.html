@@ -743,7 +743,7 @@ footer {
       var form=this,data=new FormData(form);
       fetch("https://formsubmit.co/ajax/micongemx@gmail.com",{method:"POST",body:data,headers:{"Accept":"application/json"}})
         .then(function(r){return r.json();})
-        .then(function(res){if(res.success){form.style.display="none";document.getElementById("form-success").style.display="block";}})
+        .then(function(res){if(res.success){form.style.display="none";document.getElementById("form-success").style.display="block";gtag('event','conversion',{'send_to':'AW-18455475213/uj5SCIyC_vkcEI3ooOBE','value':1.0,'currency':'MXN'});}})
         .catch(function(){form.submit();});
     });
     </script>
