@@ -775,5 +775,12 @@ footer {
   }, {passive: true});
 })();
 </script>
+<!-- Google Ads: conversión por clic en WhatsApp (los enlaces abren en pestaña nueva, no hace falta redirigir) -->
+<script>
+document.addEventListener('click', function(e){
+  var a = e.target.closest && e.target.closest('a[href*="wa.me"]');
+  if (a) gtag('event', 'conversion', {'send_to': 'AW-18455475213/d0N7CJmkoIkdEI3ooOBE', 'value': 1.0, 'currency': 'MXN'});
+});
+</script>
 </body>
 </html>
